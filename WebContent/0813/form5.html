@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/publicstyle.css">
+<style>
+	div{
+		border : 5px solid blue;
+		font-size : 1.5em;
+		margin : 10px;
+		padding : 10px;
+		width : 500px;
+		height : 200px;
+	}	
+	label{
+		border : 2px solid orange;
+		width : 200px;
+		height : 100px;
+	}
+	span{
+		display : inline-block;
+		width : 100px;	
+		height : 20px;
+	}
+	.gender{
+		height : 100px;
+	}
+	#info{
+		height : 300px;
+	}
+</style>
+</head>
+<body>
+<pre>
+	inline요소 : 자동으로 줄이 바뀌지 않고 가로 세로 길이를 지정할 수 없다.
+		span, label, input
+	block요소 : 자동으로 줄이 바뀌고 한줄 전체를 차지한다.
+		div, form
+	
+	style에서 block요소와 inline요소를 변경할 수 있다.
+	display : none,
+	display : block
+	display : inline
+	display : inline-block 줄이 바뀌지 않고 가로세로 길이 조절가능
+</pre>
+
+	<form>
+		<div class ="gender">
+			<fieldset>
+				<legend>성별</legend>
+					<input type = "radio" name = "gender" value = "남자">남자
+					<input type = "radio" name = "gender" value = "여자">여자<br>
+			</fieldset>
+		</div>
+		
+		<br>
+		
+		<div class ="gender">
+			<fieldset>
+				<legend>성별</legend>
+				<label for="m">남자</label>
+				<input type = "radio" name = "lagender" id = "m" value = "남자">
+				
+				<label for="fm">여자</label>
+				<input type = "radio" name = "lagender" id = "fm" value = "여자"><br>
+			</fieldset>
+		</div>
+		<br>
+		<div id = "info">
+			<fieldset>
+				<legend>인적사항 입력</legend>
+				<span>이름</span><input type = "text" name="name"><br>
+				<span>아이디</span><input type = "text" name="id"><br>
+				<span>이메일</span><input type = "text" name="email"><br>
+				<span>전화번호</span><input type = "text" name="tel"><br>
+				<span>주소</span><input type = "text" name="address"><br>
+			</fieldset>
+		</div>
+	</form>
+</body>
+</html>

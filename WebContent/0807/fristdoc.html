@@ -1,0 +1,69 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<title>첫번째 문서</title>
+		
+		<style>
+			pre{
+				background : skyblue;
+				font-size : 15px;
+				border : 8px dashed orange;
+			}
+			span{
+				font-size : 1.5em;
+				color : red;
+				border : 5px double red;
+			}
+			/*
+			h1, h2, img{
+				border : 5px dotted green;
+			}
+			*/
+		</style>
+	</head>
+	<body>
+		<!-- pre 태그는 입력한 모양 그대로 출력된다 -->
+		<pre>
+			pre태그로 작성된 문단입니다.<br>
+			&lt;br&gt; 태그는 강제줄바꿈 기능입니다.
+			&lt;pre&gt 태그는 입력한 모양 그대로 출력합니다.
+			&lt;h1&gt ~ &lt;h6&gt 제목을 나타내기 위한 태그입니다.
+			&lt;img&gt 태그는 이미지를 나타내는 태그입니다.
+			&lt;src&gt 속성이 반드시 필요합니다.
+			
+			전체 문장 중에서 일부분의 문장을 분리해서
+			스타일을 지정하고자 할 때 &lt;span&gt; 태그를 사용합니다.
+			
+			스타일을 설정하기 위해서는 &lt;style&gt; 태그가 필요합니다.
+			
+			block요소 : 한줄 전체를 차지하면서 자동으로 줄이 바뀌는 성질.
+			ex) pre, h1, h2, br
+			
+			inline요소 : 필요한 부분만 차지하면서 줄이 바뀌지 않는 성질.
+			ex) span, img
+			
+		</pre>
+		
+		<!-- 주석, 설명문, 화면에 표시 되지 않는 문장
+			<h1>HELLO</h1>
+		-->
+	<!-- h1태그는 큰 제목을 표시할때 
+		자동으로 줄이 변경된다
+	-->
+	<h1><span>WelCome</span> to the web Programming</h1>
+	
+	<!-- img 태그는 이미지를 나타내는 태그다
+		src="" 속성이 반드시 필요하다
+		이미지의 크기를 지정한다(width, height)라는 속성을 사용한다.
+		줄이 변경되지 않는다 
+		강제 줄바꿈이 필요하다 br태그를 사용한다
+	-->
+	<img src="../images/coffee1.jpg" width="200px" height="150px">
+	<br><br>
+	
+	언제든지 오셔서 질문이 있으면 남겨주세요 여러분을 <span>환영</span>합니다.
+	
+	<h2>내용</h2>
+	HTML5, CSS, javascript, jQuery, SQL, Jsp ,Spring
+	</body>
+</html>

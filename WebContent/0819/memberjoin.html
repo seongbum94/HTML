@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	form,h1{
+		text-align : center;
+	}
+	label{
+		display : inline-block;
+		width : 50px;
+	}
+	input{
+		background : lightblue;
+	}
+	input[type=submit]{
+		background : lightgreen;
+	}
+	input[type=submit]:hover{
+		background : pink;
+	}
+	input[type=submit]:active{
+		background : crimson;
+	}
+	input[type=text]{
+		border : 2px solid blue;
+	}
+	input[type=reset]{
+		background : magenta;
+	}
+	input[name=gender]{
+		background : crimson;
+	}
+</style>
+<meta charset="UTF-8">
+<title>회원 가입 화면</title>
+</head>
+<body>
+<h1>회원가입 화면</h1>
+<form action = "memberjoin.jsp" method = "post">
+	<label>이름 : </label><input type="text" name = "name"><br>
+	<label>주소 : </label><input type ="text" name = "address"><br>
+	<label>email : </label><input type = "email" name = "email"><br>
+	<input type = "radio" id = "m" name = "gender" value = "남자" ><label for = "m">male</label><br>
+	<input type = "radio" id = "fm" name = "gender" value = "여자"><label for = "fm">female</label><br>	
+	<input type = "submit" value ="Send">
+	<input type = "reset" value = "원래대로">
+</form>
+</body>
+</html>

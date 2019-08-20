@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel ="stylesheet" href = "../css/publicstyle.css">
+<style>
+	fieldset{
+		width : 300px;
+	}
+	legend{
+		background : skyblue;
+	}
+	form{
+		border : 5px solid blue;
+		margin : 20px;
+		padding : 20px;
+	}
+	label{
+		display : inline-block;
+		width : 60px;
+		height : 30px;
+	}
+	span{
+		color : red;
+		font-size : 1.2em;
+	}
+</style>
+<script>
+	function proc(){
+		idVal = document.ff.id.value;
+		passVal = document.ff.pass.value;
+		
+		document.ff.action = "f1.jsp?id=" + idVal + "&pass="+ passVal;
+		document.ff.submit();
+	}
+</script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<pre>
+	전송기능 -form 태그의 action에 지정된 서버페이지가 실행되어진다.
+	- input type ="submit"
+	- button type = "submit"
+	- input type = "image"
+	- button
+	
+	일반버튼
+	- input type = "button"
+	- button type = "button"
+	- 전송기능이 없다, 스크립트를 통해서 이벤트에 의한 기능을 부여한다.
+	
+	&lt;input type ="button" value = "확인" onclick="proc()"&gt;
+	&lt;button type ="button" <span>onclick="proc()"</span>&gt;확인&lt;button&gt;
+	
+	&lt;script&gt;
+	<span>function proc()</span>{
+		idVal = document.ff.id.value;
+		passVal = document.ff.pass.value;
+		
+		document.ff.action = "f1.jsp?id=" + idVal + "&pass="+ passVal;
+		document.ff.submit();
+	}
+	&lt;/script&gt;
+</pre>
+	<form action = "f1.jsp" method = "get">
+		<fieldset>
+			<legend>전송(type = submit)버튼-get방식</legend>
+			<input type = "text" placeholder="아이디" name = "id"><br>
+			<input type = "password" placeholder="패스워드" name = "pass"><br>
+			<input type = "submit" value = "전송">
+			<button type = "submit">전송</button>
+		</fieldset>
+	</form>
+	<form action = "f1.jsp" method = "post">
+		<fieldset>
+			<legend>전송버튼-post방식</legend>
+			<input type = "text" placeholder="아이디" name = "id"><br>
+			<input type = "password" placeholder="패스워드" name = "pass"><br>
+			<input type = "image" src = "../images/check.png">
+			<button>전송</button>
+		</fieldset>
+	</form>
+	<form name = "ff">
+		<fieldset>
+			<legend>일반(type = button)버튼-script-onclick</legend>
+			<input type = "text" placeholder="아이디" name = "id"><br>
+			<input type = "password" placeholder="패스워드" name = "pass"><br>
+			<input type = "button" value = "확인" onclick = "proc()">
+			<button type = "button" onclick = "proc()">확인</button>
+		</fieldset>
+	</form>
+</body>
+</html>
