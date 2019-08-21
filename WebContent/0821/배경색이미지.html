@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div{
+		width : 80%;
+		height : 200px;
+		border : 2px solid green;
+		margin : 20px;
+		padding : 20px;
+		font-size : 1.5em;
+		color : white;
+		text-align : center;
+	}
+	#d1{
+		background-image : linear-gradient(skyblue, white); 
+	}
+	#d2{
+		background-image : linear-gradient(to right ,skyblue, white); /* to right 그레디언트 방향 */
+	}
+	#d3{
+		background-image : linear-gradient(to right ,skyblue 5%, green 20%, white); /* %로 양 조절 */
+	}
+	#d4{
+		background-image : linear-gradient(45deg, red, yellow,  green,navy, purple); /* deg : 각도 조절 */
+	}
+	#d5{
+		background-image : radial-gradient(red, yellow, green);
+	}
+</style>
+</head>
+<body>
+<div id = "d1">background-image : linear-gradient(skyblue, white); 
+</div>
+<div id = "d2">background-image : linear-gradient(to right ,skyblue, white); /* to right 그레디언트 방향 */
+</div>
+<div id = "d3">background-image : linear-gradient(to right ,skyblue 5%, green 20%, white); /* %로 양 조절 */
+</div>
+<div id = "d4">background-image : linear-gradient(45deg, red, yellow,  green,navy, purple); /* deg : 각도 조절 */
+</div>
+<div id = "d5">radial-gradient(red, yellow, green);
+</div>
+</body>
+</html>
